@@ -25,6 +25,21 @@ const Hero = () => {
             Computer Science and Engineering student at Lovely Professional University. I build software, backend systems, and AI projects with a focus on performance and clean execution.
           </p>
 
+
+          <div className="flex flex-wrap items-center gap-3 mt-2">
+            <div className="inline-flex items-center gap-2 border-4 border-black bg-white px-3 py-2 shadow-[2px_2px_0px_0px_rgba(0,0,0,1)] hover-pop">
+              <span className="inline-flex items-center justify-center w-6 h-6 bg-mustard border-2 border-black font-black text-sm">C</span>
+              <span className="font-black uppercase text-xs tracking-widest">x99</span>
+            </div>
+            <div className="inline-flex items-center gap-1 border-4 border-black bg-white px-3 py-2 shadow-[2px_2px_0px_0px_rgba(0,0,0,1)]">
+              <span className="w-5 h-5 bg-coral-red border-2 border-black inline-flex items-center justify-center text-[12px] leading-none">♥</span>
+              <span className="w-5 h-5 bg-coral-red border-2 border-black inline-flex items-center justify-center text-[12px] leading-none">♥</span>
+              <span className="w-5 h-5 bg-coral-red border-2 border-black inline-flex items-center justify-center text-[12px] leading-none">♥</span>
+            </div>
+            <div className="inline-flex items-center border-4 border-black bg-sky-blue px-3 py-2 shadow-[2px_2px_0px_0px_rgba(0,0,0,1)] hover-pop">
+              <span className="font-black uppercase text-xs tracking-[0.3em] text-black">LVL 01</span>
+            </div>
+          </div>
           <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 max-w-xl">
             <InfoPill icon={<FiMail />} label="EMAIL" value="akashchaudhary9368@gmail.com" />
             <InfoPill icon={<FiPhone />} label="MOBILE" value="+91-9368644199" />
