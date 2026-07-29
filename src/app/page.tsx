@@ -10,6 +10,7 @@ import Experience from "@/components/sections/Experience";
 import Education from "@/components/sections/Education";
 import Testimonials from "@/components/sections/Testimonials";
 import Footer from "@/components/sections/Footer";
+import RetroStickerAccents from "@/components/sections/RetroStickerAccents";
 
 export default function Home() {
   return (
@@ -17,6 +18,7 @@ export default function Home() {
       <Navbar />
       <ResumeStrip />
       <section className="w-full relative pt-10 md:pt-14">
+        <RetroStickerAccents />
         <SpiderSticker />
         <Hero />
       </section>

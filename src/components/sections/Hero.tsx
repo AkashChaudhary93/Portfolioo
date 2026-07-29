@@ -13,7 +13,7 @@ const Hero = () => {
 
       <div className="max-w-7xl mx-auto relative z-10 grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
         <div className="space-y-8">
-          <div className="inline-block px-3 py-1 bg-lime-green border-2 border-black rounded-md font-mono text-sm font-bold uppercase tracking-wider shadow-[2px_2px_0px_0px_rgba(0,0,0,1)] mb-4 transform -rotate-2 hover-pop hover-glow">
+          <div className="inline-block px-3 py-1 bg-lime-green border-2 border-black rounded-md font-mono text-sm font-bold uppercase tracking-wider shadow-[2px_2px_0px_0px_rgba(0,0,0,1)] mb-4 transform -rotate-2 pac-waddle hover-glow">
             AVAILABLE FOR HIRE
           </div>
 
