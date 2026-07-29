@@ -13,7 +13,7 @@ const Hero = () => {
 
       <div className="max-w-7xl mx-auto relative z-10 grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
         <div className="space-y-8">
-          <div className="inline-block px-3 py-1 bg-lime-green border-2 border-black rounded-md font-mono text-sm font-bold uppercase tracking-wider shadow-[2px_2px_0px_0px_rgba(0,0,0,1)] mb-4 transform -rotate-2 pac-waddle hover-glow">
+          <div className="inline-block px-3 py-1 bg-lime-green border-2 border-black rounded-md font-mono text-sm font-bold uppercase tracking-wider shadow-[2px_2px_0px_0px_rgba(0,0,0,1)] mb-4 transform -rotate-2 ">
             AVAILABLE FOR HIRE
           </div>
 
@@ -34,7 +34,7 @@ const Hero = () => {
         </div>
 
         <div className="relative">
-          <div className="bg-navy border-4 border-black rounded-lg shadow-[8px_8px_0px_0px_rgba(0,0,0,1)] overflow-hidden text-white relative z-10 mx-auto w-full max-w-lg transform rotate-1 hover:rotate-0 transition-transform duration-300">
+          <div className="bg-navy border-4 border-black rounded-lg shadow-[8px_8px_0px_0px_rgba(0,0,0,1)] overflow-hidden text-white relative z-10 mx-auto w-full max-w-lg transform rotate-1 hover:rotate-0 transition-transform">
             <div className="border-b-4 border-black bg-white px-4 py-3 flex items-center justify-between text-black">
               <div className="flex gap-2">
                 <div className="w-4 h-4 rounded-full bg-coral-red border-2 border-black"></div>

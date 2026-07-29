@@ -106,21 +106,18 @@
   50% { transform: scale(1.08); }
 }
 
-  .arcade-hover {
-    @apply transition-all duration-200 hover:scale-[1.04] hover:-translate-y-1 hover:-translate-x-1 hover:shadow-[8px_8px_0px_0px_rgba(0,0,0,1)] hover:rotate-[-0.6deg];
+  .hover-lift {
+    @apply transition-transform duration-200 hover:-translate-y-[2px] hover:shadow-[6px_6px_0px_0px_rgba(0,0,0,1)];
   }
 
-  .arcade-glow:hover {
-    filter: drop-shadow(0 0 10px rgba(245,197,24,0.6));
+  .hover-tilt {
+    @apply transition-transform duration-200 hover:-rotate-1;
   }
 
-  .coin-spin {
-    animation: coinSpin 1.2s ease-in-out infinite;
+  .hover-pop {
+    @apply transition-transform duration-200 hover:scale-[1.02];
   }
 
-  .pac-waddle {
-    animation: pacWaddle 0.6s ease-in-out infinite;
-  }
 @keyframes coinSpin {
   0%, 100% { transform: rotateY(0deg); }
   50% { transform: rotateY(180deg); }

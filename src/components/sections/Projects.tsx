@@ -43,27 +43,27 @@ const Projects = () => {
 
         <div className="grid grid-cols-1 lg:grid-cols-3 gap-10">
           {projects.map((project, i) => (
-            <div key={i} className="bg-cream text-black border-4 border-black rounded-md shadow-[8px_8px_0px_0px_rgba(245,197,24,1)] flex flex-col h-full arcade-hover arcade-glow coin-spin">
+            <div key={i} className="bg-cream text-black border-4 border-black rounded-md shadow-[8px_8px_0px_0px_rgba(245,197,24,1)] flex flex-col h-full  ">
               <div className="bg-mustard border-b-4 border-black p-4">
-                <div className="font-mono text-sm font-black border-2 border-black bg-white px-2 py-0.5 inline-block uppercase shadow-[2px_2px_0px_0px_rgba(0,0,0,1)] pac-waddle">
+                <div className="font-mono text-sm font-black border-2 border-black bg-white px-2 py-0.5 inline-block uppercase shadow-[2px_2px_0px_0px_rgba(0,0,0,1)] ">
                   PROJECT {i + 1}
                 </div>
               </div>
               <div className="p-8 flex-grow flex flex-col bg-white rounded-b-sm">
-                <h3 className="text-3xl font-black mb-4 uppercase leading-tight coin-spin">{project.title}</h3>
+                <h3 className="text-3xl font-black mb-4 uppercase leading-tight ">{project.title}</h3>
                 <p className="font-medium text-lg text-text-dark-gray mb-8 flex-grow">{project.desc}</p>
                 <div className="flex flex-wrap gap-2 mb-8">
                   {project.tech.map((t) => (
-                    <span key={t} className="text-xs font-black font-mono uppercase bg-cream border-2 border-black px-2 py-1 pac-waddle hover-glow">
+                    <span key={t} className="text-xs font-black font-mono uppercase bg-cream border-2 border-black px-2 py-1  ">
                       {t}
                     </span>
                   ))}
                 </div>
                 <div className="flex gap-4 mt-auto">
-                  <a href={project.source || '#'} target="_blank" rel="noreferrer" className="flex-1 text-center font-black uppercase border-4 border-black py-3 hover:bg-mustard transition-all flex items-center justify-center gap-2 shadow-[2px_2px_0px_0px_rgba(0,0,0,1)] rounded-md arcade-hover">
+                  <a href={project.source || '#'} target="_blank" rel="noreferrer" className="flex-1 text-center font-black uppercase border-4 border-black py-3 hover:bg-mustard transition-transform flex items-center justify-center gap-2 shadow-[2px_2px_0px_0px_rgba(0,0,0,1)] rounded-md">
                     <FiGithub /> Code
                   </a>
-                  <a href="#" className="flex-1 text-center font-black uppercase border-4 border-black py-3 bg-black text-white hover:bg-sky-blue hover:text-black transition-all flex items-center justify-center gap-2 shadow-[2px_2px_0px_0px_rgba(0,0,0,1)] rounded-md arcade-hover">
+                  <a href="#" className="flex-1 text-center font-black uppercase border-4 border-black py-3 bg-black text-white hover:bg-sky-blue hover:text-black transition-transform flex items-center justify-center gap-2 shadow-[2px_2px_0px_0px_rgba(0,0,0,1)] rounded-md">
                     <FiExternalLink /> Live
                   </a>
                 </div>
