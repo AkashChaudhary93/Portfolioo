@@ -1,5 +1,6 @@
 import React from 'react';
-import { FiGithub, FiLinkedin, FiMail, FiPhone } from 'react-icons/fi';
+import { FiGithub, FiLinkedin, FiMail, FiPhone, FiDownload } from 'react-icons/fi';
+import CountUp from '@/components/ui/CountUp';
 
 const Hero = () => {
   return (
@@ -16,6 +17,10 @@ const Hero = () => {
           <div className="inline-block px-3 py-1 bg-lime-green border-2 border-black rounded-md font-mono text-sm font-bold uppercase tracking-wider shadow-[2px_2px_0px_0px_rgba(0,0,0,1)] mb-2 transform -rotate-2">
             AVAILABLE FOR HIRE
           </div>
+
+          <a href="#" className="inline-flex items-center gap-2 px-4 py-2 bg-black text-white border-4 border-black rounded-md font-mono text-sm font-bold uppercase tracking-wider shadow-[2px_2px_0px_0px_rgba(0,0,0,1)] hover-lift transition-transform">
+            <FiDownload size={16} /> Download CV
+          </a>
 
           <h1 className="text-5xl md:text-7xl font-black text-black leading-[1] tracking-[-0.05em] uppercase font-sans">
             Hi, I&apos;m <span className="relative inline-block bg-black text-white px-4 py-1 border-4 border-black shadow-[4px_4px_0px_0px_rgba(0,0,0,1)] rotate-[-1deg]">Akash Chaudhary</span>.
@@ -71,12 +76,12 @@ const Hero = () => {
               <div className="mt-8 border-4 border-black p-4 bg-white text-black rounded-sm relative shadow-[4px_4px_0px_0px_rgba(168,230,0,1)]">
                 <div className="flex gap-4">
                   <div className="flex-1 text-center">
-                    <div className="text-4xl font-black">500+</div>
+                    <div className="text-4xl font-black"><CountUp end={500} suffix="+" /></div>
                     <div className="text-[10px] font-black uppercase tracking-wider mt-1">Students Served</div>
                   </div>
                   <div className="w-1 bg-black"></div>
                   <div className="flex-1 text-center">
-                    <div className="text-4xl font-black">99%</div>
+                    <div className="text-4xl font-black"><CountUp end={99} suffix="%" /></div>
                     <div className="text-[10px] font-black uppercase tracking-wider mt-1">Uptime</div>
                   </div>
                 </div>

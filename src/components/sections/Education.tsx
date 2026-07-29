@@ -1,4 +1,5 @@
 import React from 'react';
+import FadeIn from '@/components/ui/FadeIn';
 
 const education = [
   {
@@ -22,7 +23,7 @@ const Education = () => {
   return (
     <section className="bg-cream py-28 px-6 md:px-12 border-b-4 border-black relative overflow-hidden">
       <div className="max-w-7xl mx-auto">
-        <h2 className="text-5xl md:text-7xl font-black uppercase tracking-tight mb-12 leading-none robot-title">Education</h2>
+        <FadeIn><h2 className="text-5xl md:text-7xl font-black uppercase tracking-tight mb-12 leading-none robot-title">Education</h2></FadeIn>
         <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
           {education.map((item, i) => (
             <div key={i} className="bg-white border-4 border-black p-6 md:p-8 rounded-md shadow-[4px_4px_0px_0px_rgba(0,0,0,1)] hover-lift">

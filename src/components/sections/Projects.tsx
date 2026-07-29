@@ -1,5 +1,6 @@
 import React from 'react';
-import { FiExternalLink, FiGithub } from 'react-icons/fi';
+import FadeIn from '@/components/ui/FadeIn';
+import { FiExternalLink, FiGithub, FiEye, FiCpu, FiCloud } from 'react-icons/fi';
 import Link from 'next/link';
 
 const projects = [
@@ -7,19 +8,28 @@ const projects = [
     title: 'Real-Time Floodwater Level Measurement using YOLOv8',
     desc: 'Trained a YOLOv8n semantic segmentation model achieving 90%+ mask accuracy for real-time floodwater monitoring. Used Otsu binarisation to improve measurement precision by 25%.',
     tech: ['YOLOv8', 'Computer Vision', 'Otsu Binarisation'],
-    source: 'https://github.com/AkashChaudhary93/Computer-vision'
+    source: 'https://github.com/AkashChaudhary93/Computer-vision',
+    icon: <FiEye size={48} strokeWidth={2.5} />,
+    color: 'bg-sky-blue',
+    label: 'CV'
   },
   {
     title: 'RAG-SaaS — Enterprise Knowledge Base Platform',
     desc: 'Built a full-stack RAG platform with FastAPI, React, ChromaDB, and multi-LLM support. Added JWT auth, user-scoped data isolation, SQLite persistence, rate limiting, and Docker multi-stage builds.',
     tech: ['FastAPI', 'React', 'ChromaDB', 'Docker'],
-    source: 'https://github.com/AkashChaudhary93/RAG-Saas'
+    source: 'https://github.com/AkashChaudhary93/RAG-Saas',
+    icon: <FiCloud size={48} strokeWidth={2.5} />,
+    color: 'bg-lime-green',
+    label: 'SAAS'
   },
   {
     title: 'Campus Crave: Logistics & Operations',
     desc: 'Developed a full-stack food ordering system using React.js and Spring Boot, with dual interfaces, real-time status tracking, and automated inventory updates.',
     tech: ['React.js', 'Spring Boot', 'MySQL'],
-    source: 'https://github.com/AkashChaudhary93/Project-Winter-Pep'
+    source: 'https://github.com/AkashChaudhary93/Project-Winter-Pep',
+    icon: <FiCpu size={48} strokeWidth={2.5} />,
+    color: 'bg-hot-orange',
+    label: 'FULLSTACK'
   }
 ];
 
@@ -32,21 +42,22 @@ const Projects = () => {
             <div className="inline-block bg-sky-blue text-black border-4 border-black px-4 py-2 font-mono text-xs font-black uppercase shadow-[4px_4px_0px_0px_rgba(0,0,0,1)] mb-6">
               Projects
             </div>
-            <h2 className="text-5xl md:text-7xl font-black uppercase tracking-tight leading-none robot-title">
-              Featured Projects
-            </h2>
+            <FadeIn><h2 className="text-5xl md:text-7xl font-black uppercase tracking-tight leading-none robot-title">
+              Featured Projects</h2></FadeIn>
           </div>
-          <Link href="https://github.com/AkashChaudhary93" target="_blank" className="inline-flex items-center justify-center font-black uppercase tracking-wide px-6 py-3 bg-white text-black border-4 border-black shadow-[4px_4px_0px_0px_rgba(0,0,0,1)] rounded-md">
+          <Link href="https://github.com/AkashChaudhary93" target="_blank" className="inline-flex items-center justify-center font-black uppercase tracking-wide px-6 py-3 bg-white text-black border-4 border-black shadow-[4px_4px_0px_0px_rgba(0,0,0,1)] rounded-md hover-lift transition-transform">
             View GitHub <FiGithub className="ml-2" />
           </Link>
         </div>
 
         <div className="grid grid-cols-1 lg:grid-cols-3 gap-8">
           {projects.map((project, i) => (
-            <div key={i} className="bg-cream text-black border-4 border-black rounded-md shadow-[8px_8px_0px_0px_rgba(245,197,24,1)] flex flex-col h-full  ">
-              <div className="bg-mustard border-b-4 border-black p-4">
-                <div className="font-mono text-sm font-black border-2 border-black bg-white px-2 py-0.5 inline-block uppercase shadow-[2px_2px_0px_0px_rgba(0,0,0,1)] ">
-                  PROJECT {i + 1}
+            <div key={i} className="bg-cream text-black border-4 border-black rounded-md shadow-[8px_8px_0px_0px_rgba(245,197,24,1)] flex flex-col h-full">
+              {/* Thumbnail */}
+              <div className={`${project.color} border-b-4 border-black p-6 flex flex-col items-center justify-center gap-2 min-h-[140px]`}>
+                <div className="text-black">{project.icon}</div>
+                <div className="font-mono text-xs font-black border-2 border-black bg-white px-2 py-0.5 uppercase shadow-[2px_2px_0px_0px_rgba(0,0,0,1)]">
+                  {project.label}
                 </div>
               </div>
               <div className="p-6 md:p-8 flex-grow flex flex-col bg-white rounded-b-sm">
@@ -54,7 +65,7 @@ const Projects = () => {
                 <p className="font-medium text-base md:text-lg text-text-dark-gray mb-6 flex-grow">{project.desc}</p>
                 <div className="flex flex-wrap gap-2 mb-6">
                   {project.tech.map((t) => (
-                    <span key={t} className="text-xs font-black font-mono uppercase bg-cream border-2 border-black px-2 py-1  ">
+                    <span key={t} className="text-xs font-black font-mono uppercase bg-cream border-2 border-black px-2 py-1">
                       {t}
                     </span>
                   ))}

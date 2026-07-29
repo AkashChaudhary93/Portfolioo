@@ -1,4 +1,5 @@
 import React from 'react';
+import FadeIn from '@/components/ui/FadeIn';
 
 const certifications = [
   {
@@ -25,7 +26,7 @@ const Experience = () => {
     <section className="bg-mustard py-28 px-6 md:px-12 border-b-4 border-black relative overflow-hidden">
       <div className="max-w-7xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-12">
         <div>
-          <h2 className="text-5xl md:text-6xl font-black uppercase tracking-tight mb-8 leading-none robot-title">Certifications</h2>
+          <FadeIn><h2 className="text-5xl md:text-6xl font-black uppercase tracking-tight mb-8 leading-none robot-title">Certifications</h2></FadeIn>
           <div className="space-y-6">
             {certifications.map((item, i) => (
               <div key={i} className="bg-white border-4 border-black p-6 rounded-md shadow-[4px_4px_0px_0px_rgba(0,0,0,1)] hover-lift">
@@ -39,7 +40,7 @@ const Experience = () => {
         </div>
 
         <div>
-          <h2 className="text-5xl md:text-6xl font-black uppercase tracking-tight mb-8 leading-none robot-title">Achievements</h2>
+          <FadeIn><h2 className="text-5xl md:text-6xl font-black uppercase tracking-tight mb-8 leading-none robot-title">Achievements</h2></FadeIn>
           <div className="space-y-6">
             {achievements.map((item, i) => (
               <div key={i} className="bg-white border-4 border-black p-6 rounded-md shadow-[4px_4px_0px_0px_rgba(0,0,0,1)] hover-lift">

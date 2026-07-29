@@ -1,4 +1,5 @@
 import React from 'react';
+import FadeIn from '@/components/ui/FadeIn';
 import { FiCode, FiDatabase, FiGlobe, FiLayers } from 'react-icons/fi';
 
 const features = [
@@ -34,7 +35,7 @@ const Features = () => {
       <div className="absolute inset-0 opacity-15 pointer-events-none" style={{ backgroundImage: 'radial-gradient(#000000 2px, transparent 2px)', backgroundSize: '40px 40px' }}></div>
       <div className="max-w-7xl mx-auto relative z-10">
         <div className="mb-20 max-w-3xl">
-          <h2 className="text-5xl md:text-6xl font-black uppercase tracking-tight mb-6 leading-none robot-title">Skills and Tools</h2>
+          <FadeIn><h2 className="text-5xl md:text-6xl font-black uppercase tracking-tight mb-6 leading-none robot-title">Skills and Tools</h2></FadeIn>
           <p className="text-xl font-medium text-text-dark-gray border-l-4 border-black pl-6 robot-text">These are the technologies and concepts listed in the CV.</p>
         </div>
         <div className="grid grid-cols-1 md:grid-cols-2 gap-10">

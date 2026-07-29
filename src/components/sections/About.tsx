@@ -1,4 +1,5 @@
 import React from 'react';
+import FadeIn from '@/components/ui/FadeIn';
 
 const About = () => {
   return (
@@ -10,9 +11,9 @@ const About = () => {
           <div className="inline-block bg-lime-green border-4 border-black px-4 py-2 font-mono text-xs font-black uppercase shadow-[4px_4px_0px_0px_rgba(0,0,0,1)] mb-6">
             About Me
           </div>
-          <h2 className="text-5xl md:text-6xl font-black uppercase tracking-tight mb-6 leading-none robot-title">
+          <FadeIn><h2 className="text-5xl md:text-6xl font-black uppercase tracking-tight mb-6 leading-none robot-title">
             A bit about me
-          </h2>
+          </h2></FadeIn>
           <p className="text-lg md:text-xl font-medium text-text-dark-gray leading-relaxed max-w-2xl robot-text">
             I&apos;m Akash Chaudhary, a Computer Science and Engineering student at Lovely Professional University.
             I like building practical software, working on AI and computer vision projects, and solving problems with clean, reliable code.
